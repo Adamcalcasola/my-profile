@@ -4,25 +4,21 @@
     margin: 0;
 }
 
-a {
-    color:white;
-    text-decoration: none;
-}
-
-/* body {
-    background-color: blue;
-}*/
-
 header {
     background-color: blue;
     color: white;
-    padding:25px;
     width:100%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+
+header a {
+    color: white;
 }
 
 header h1 {
     font-size:50px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -43,52 +39,41 @@ h2 {
     font-size: 40px;
     margin: 20px;
 }
+
+h3 {
+    font-size: 30px;
+}
+
 .profile {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #00c0c0;
+    background-color: cyan;
     width: 100%;
     height: 100%;
-    /* border:black solid 2px; */
 }
+
 .profile img {
-    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 250px;
     margin:auto;
-    max-width: 500px;
-    padding:20px;
+    /*max-width: 500px;*/
 }
+
 .profile p {
     margin:auto;
-    display:inline;
-    width:500px;
-    padding: 20px 0px;  
-}
-/* Main section img {
-    display: block;
-    margin:auto;
-    max-width: 500px;
-    padding:20px;
-}
-Main section p {
-    margin:auto;
-    display:inline;
-    width:500px;
+    width:1000px;
     padding: 20px 0px;
-}*/
+    font-size: 20px;
+}
 
 #projects {
     display: flex;
     background-color: blue;
     flex-direction: column;
 }
-
-/*
-.projects {
-    display: flex;
-    flex-direction: column;
-}
-*/
 
 .major {
     flex: 2 0 auto;
@@ -120,7 +105,7 @@ Main section p {
 }
 
 footer {
-    padding:10px;
+    padding: 1px;
     background-color: #00c0c0;
     color: black;
     text-align: center;
@@ -144,13 +129,61 @@ footer section a {
 }
 
 @media screen and (max-width: 980px) {
+    header h1 {
+        font-size: 40px;
+    }
 
+    header nav {
+        text-align: center;
+    }
+
+    header nav ul {
+        font-size: 25px;
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin: 10px;
+    }
+
+    .profile p {
+        width: 500px;
+    }
+
+    .major a img {
+        max-width: 400px;
+    }
+
+    .minor {
+        flex-direction: column;
+    }
+
+    .minor a img {
+        max-width: 400px;
+    }
+
+    footer section {
+        font-size: 15px;
+    }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 426px) {
+    h2 {
+        font-size: 30px;
+    }
 
-}
+    h3 {
+        font-size: 25px;
+    }
 
-@media screen and (max-width: 580px) {
+    .profile p {
+        width: 300px;
+    }
 
+    .major a img {
+        max-width: 300px;
+    }
+
+    .minor a img {
+        max-width: 300px;
+    }
 }

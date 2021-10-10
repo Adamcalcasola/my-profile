@@ -10,7 +10,7 @@
 * The third section includes my contact information including my cell phone number, email, Linkedin page, and Github page.
 * The displayed email, Linkedin, and Github navigates to the relevent page.
 
-![image](./assets/images/Adam Calcasola Profile screenshot.png)
+![Adam Calcasola Profile screenshot](https://user-images.githubusercontent.com/90876169/136716399-5ea6a584-9fdf-4c12-b5f2-282dd27c4a3b.png)
 
 https://adamcalcasola.github.io/my-profile/
 

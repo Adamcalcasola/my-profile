@@ -1,8 +1,12 @@
+/* Global Styling */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+/* Header Styling */
 
 header {
     background-color: blue;
@@ -30,6 +34,8 @@ header nav ul {
     margin:20px;
 }
 
+/* Main Section Styling */
+
 Main {
     color:black;
     text-align: center;
@@ -43,6 +49,8 @@ h2 {
 h3 {
     font-size: 30px;
 }
+
+/* Profile Section Styling */
 
 .profile {
     display: flex;
@@ -59,24 +67,29 @@ h3 {
     object-fit: cover;
     border-radius: 250px;
     margin:auto;
-    /*max-width: 500px;*/
+}
+
+.profile h3 {
+    margin-top: 20px;
 }
 
 .profile p {
     margin:auto;
-    width:1000px;
+    width:900px;
     padding: 20px 0px;
     font-size: 20px;
 }
+
+/* Projects Section Styling */
 
 #projects {
     display: flex;
     background-color: blue;
     flex-direction: column;
+    justify-content: center;
 }
 
 .major {
-    flex: 2 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -90,9 +103,11 @@ h3 {
 }
 
 .minor {
-    flex: 1 0 auto;
     display: flex;
+    /*flex: 0 1 auto;*/
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 30px;
     margin-bottom: 25px;
 }
 
@@ -103,6 +118,8 @@ h3 {
 .minor a img {
     max-width: 500px;
 }
+
+/* Contact Information Section Styling */
 
 footer {
     padding: 1px;
@@ -128,6 +145,8 @@ footer section a {
     color: black;
 }
 
+/* Sizing and orientation changes for medium size screens */
+
 @media screen and (max-width: 980px) {
     header h1 {
         font-size: 40px;
@@ -146,7 +165,7 @@ footer section a {
     }
 
     .profile p {
-        width: 500px;
+        width: 400px;
     }
 
     .major a img {
@@ -166,6 +185,8 @@ footer section a {
     }
 }
 
+/* Sizing and orientation changes for small/modile size screens */
+
 @media screen and (max-width: 426px) {
     h2 {
         font-size: 30px;
@@ -176,7 +197,7 @@ footer section a {
     }
 
     .profile p {
-        width: 300px;
+        width: 320px;
     }
 
     .major a img {
